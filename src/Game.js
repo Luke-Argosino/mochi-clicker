@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React, {useState} from 'react'
 
 function Game() {
@@ -15,7 +14,7 @@ function Game() {
     return (
         <div className="Game">
             <div>{counter}</div>
-            <img id="mochi" src={window.location.origin + '/assets/mochi.png'} onMouseDown={handleDownClick} onMouseUp={handleUpClick}/>    
+            <img id="mochi" alt="picture of a mochi" src={window.location.origin + '/assets/mochi.png'} onMouseDown={handleDownClick} onMouseUp={handleUpClick}/>    
         </div>
     )
 }
