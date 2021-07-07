@@ -11,25 +11,20 @@ function Game() {
         imageClickReset()
     }
 
-    const setToZero = () => setCounter(0)
+    const imageClick = () => {
+        document.getElementById("mochi").src='../assets/mochi_hit.png'
+    }
+    
+    const imageClickReset = () => {
+        document.getElementById("mochi").src='../assets/mochi.png'
+    }
 
     return (
         <div className="Game">
-            <div>{counter}</div>
+            <div><h1>{counter}</h1></div>
             <img id="mochi" alt="mochi" src={window.location.origin + '/assets/mochi.png'} onMouseDown={handleDownClick} onMouseUp={handleUpClick}/>
-            <button onClick={setToZero}>
-                reset
-                </button> 
         </div>
     )
-}
-
-const imageClick = () => {
-    document.getElementById("mochi").src='../assets/mochi_hit.png'
-}
-
-const imageClickReset = () => {
-    document.getElementById("mochi").src='../assets/mochi.png'
 }
 
 export default Game;

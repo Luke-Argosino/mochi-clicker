@@ -2,7 +2,7 @@
 function Footer() {
     return (
         <div className="Footer">
-            <p>Authors: Luke Argosino, Xingyu Liu</p>
+            <p>Authors: <a href="https://github.com/luke-argosino">Luke Argosino</a>, <a href="https://github.com/xingyu-l">Xingyu Liu</a></p>
         </div>
     )
 }
