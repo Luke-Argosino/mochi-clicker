@@ -16,7 +16,7 @@ function Game() {
     return (
         <div className="Game">
             <div>{counter}</div>
-            <img id="mochi" alt="picture of a mochi" src={window.location.origin + '/assets/mochi.png'} onMouseDown={handleDownClick} onMouseUp={handleUpClick}/>
+            <img id="mochi" alt="mochi" src={window.location.origin + '/assets/mochi.png'} onMouseDown={handleDownClick} onMouseUp={handleUpClick}/>
             <button onClick={setToZero}>
                 reset
                 </button> 
